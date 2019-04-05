@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step to iOS development?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIU-IO-nMv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2j-9i-XRX">
+                                <rect key="frame" x="0.0" y="48.5" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mi-Vy-rOn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iil-cw-bDa">
+                                <rect key="frame" x="340" y="47.5" width="35" height="31"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pfB-Uu-rLh"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3f-0c-87R">
+                                <rect key="frame" x="0.0" y="293" width="375" height="81.5"/>
+                                <string key="text">Create the user interface. As we create the UI, we will get a better understanding of our application. Then we breathe life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIU-IO-nMv" secondAttribute="trailing" id="4u3-JT-DNu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iil-cw-bDa" secondAttribute="trailing" id="58x-52-9jI"/>
+                            <constraint firstItem="uIU-IO-nMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5A4-fa-1Ca"/>
+                            <constraint firstItem="I3f-0c-87R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7m6-qt-INU"/>
+                            <constraint firstItem="I3f-0c-87R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NLV-AB-1bf"/>
+                            <constraint firstItem="Iil-cw-bDa" firstAttribute="firstBaseline" secondItem="q2j-9i-XRX" secondAttribute="firstBaseline" id="OUC-ja-Ca9"/>
+                            <constraint firstItem="q2j-9i-XRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RuC-l9-m1k"/>
+                            <constraint firstItem="I3f-0c-87R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ojs-9w-jp9"/>
+                            <constraint firstAttribute="trailing" secondItem="I3f-0c-87R" secondAttribute="trailing" id="p4Y-u4-X2F"/>
+                            <constraint firstItem="uIU-IO-nMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="quc-a1-dmK"/>
+                            <constraint firstItem="q2j-9i-XRX" firstAttribute="top" secondItem="uIU-IO-nMv" secondAttribute="bottom" constant="8" symbolic="YES" id="rAm-E4-zXM"/>
+                            <constraint firstItem="uIU-IO-nMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x9T-3O-31s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="I3f-0c-87R" id="Vmc-eO-lrq"/>
+                        <outlet property="questionLabel" destination="uIU-IO-nMv" id="Gbh-5a-jWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
